@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Tags</title>
+    <style>
+        * {
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <!-- Tag aree pagina web -->
@@ -14,6 +19,7 @@
         <a href="https://picsum.photos/600/300">Link 1</a>
         <a href="#">Link 2</a>
         <a href="#">Link 3</a>
+
     </nav>
 </header>
 <hr>
@@ -35,7 +41,7 @@
 
     <hr>
     <!-- Tag per contenuti -->
-    <s>
+    <st>
         <h1>Tag per contenuti - Tag h1</h1>
         <h2>Testi - Tag h2</h2>
         <h3>Tag h3</h3>
@@ -44,7 +50,7 @@
         <h6>Tag h6</h6>
 
         <span>Testo in linea</span>
-        <span style="color:red; text-transform: uppercase;">Testo in linea</span>
+        <span style="color:red;">Testo in linea</span>
         <span>Testo in linea</span>
 
         <p>
@@ -87,6 +93,8 @@
             Il tuo browser non supporta il tag video.
         </video>
 
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/PLvmBjbzadc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+
         <h2>Liste</h2>
         <ul>
             <li>Primo elemento</li>
@@ -119,6 +127,16 @@
                 <li>Primo elemento lista interna</li>
                 <li>Secondo elemento lista interna</li>
                 <li>Terzo elemento lista interna</li>
+                <ul>
+                    <li>Primo elemento lista interna</li>
+                    <li>Secondo elemento lista interna</li>
+                    <li>Terzo elemento lista interna</li>
+                    <ul>
+                        <li>Primo elemento lista interna</li>
+                        <li>Secondo elemento lista interna</li>
+                        <li>Terzo elemento lista interna</li>
+                    </ul>
+                </ul>
             </ul>
         </ul>
 
@@ -148,14 +166,27 @@
 
         <b>Tag b</b>
         <br>
-        <strong>Tag strong</em>
+        <strong>Tag strong</strong>
 
         <br>
 
-        <pre>
-            <code>Tag code dentro tag pre</code>
-        </pre>
-        Tag code <code>fuori tag pre</code>
+        <code>Tag code dentro tag code</code>
+        Tag code fuori tag code
+
+
+                        <pre>
+                            <em>
+                            function </em>helloWorld() {
+                                console.log("Hello World!");
+                            }
+                            helloWorld();
+                        </pre>
+
+
+        function helloWorld() {
+            console.log("Hello World!");
+        }
+        helloWorld();
     </section>
 
 
@@ -169,6 +200,7 @@
                 <tr>
                     <th>Entrate</th>
                     <th>Uscite</th>
+                    <!-- <th>Uscite</th> -->
                 </tr>
             </thead>
 
@@ -181,8 +213,8 @@
                 </tr>
                 <!-- Riga 2 -->
                 <tr>
-                    <td>Cella 1 - Riga 2</td>
-                    <td style="background-color: aqua;">Cella 2 - Riga 2</td>
+                    <td style="background-color: aqua;">Cella 1 - Riga 2</td>
+                    <td>Cella 2 - Riga 2</td>
                 </tr>
                 <!-- Riga 3 -->
                 <tr>
@@ -219,5 +251,11 @@
     <p>Footer</p>
 </footer>
 
+<script>
+    function helloWorld() {
+        console.log("Hello World!");
+    }
+    helloWorld();
+</script>
 </body>
 </html>
