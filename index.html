@@ -11,7 +11,7 @@
 <header>
     <nav>
         <span>TAG HTML</span>
-        <a href="#">Link 1</a>
+        <a href="https://picsum.photos/600/300">Link 1</a>
         <a href="#">Link 2</a>
         <a href="#">Link 3</a>
     </nav>
@@ -35,7 +35,7 @@
 
     <hr>
     <!-- Tag per contenuti -->
-    <section>
+    <s>
         <h1>Tag per contenuti - Tag h1</h1>
         <h2>Testi - Tag h2</h2>
         <h3>Tag h3</h3>
@@ -44,27 +44,46 @@
         <h6>Tag h6</h6>
 
         <span>Testo in linea</span>
-        <span>Testo in linea</span>
+        <span style="color:red; text-transform: uppercase;">Testo in linea</span>
         <span>Testo in linea</span>
 
-        <p>Lorem ipsum dolor sit amet,
+        <p>
+            Lorem ipsum dolor sit amet,
             consectetur adipisicing elit.
             Obcaecati dolore tempora numquam
             vitae voluptate nesciunt mollitia.
         </p>
 
-        <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus necessitatibus illo ipsam iure dolores voluptatem velit perspiciatis iusto dolorem similique voluptatibus distinctio quam at tempore, quo reiciendis id incidunt ab?</blockquote>
+        <blockquote>
+            <em>
+            Lorem ipsum dolor sit <br> amet consectetur adipisicing elit. Repellendus necessitatibus illo ipsam iure dolores voluptatem velit perspiciatis iusto dolorem similique voluptatibus distinctio quam at tempore, quo reiciendis id incidunt ab?
+            </em>
+        </blockquote>
 
         <h2>Immagini</h2>
         <img src="https://picsum.photos/800/300" alt="">
-        <img src="https://picsum.photos/300" alt="">
+        <img src="https://picsum.photos/600" alt="">
         <img src="https://picsum.pho" alt="immagine bellissima">
+
+        <!-- Immagine da link esterno-->
+        <img src="https://picsum.photos/600/300"/>
+
+        <!-- Immagine locale medesima area-->
+        <img src="image.jpg"/>
+        <img src="./image.jpg"/>
+
+
+
+        <!-- Immagine locale nella cartella img-->
+        <img src="img/image2.jpg"/>
+        <img src="./img/image2.jpg"/>
 
         <h2>Video</h2>
         <video src="video.mp4" controls>
-            Descizione del video.
+            Descrizione del video.
         </video>
-        <video src="video.mp4" controls width="300" height="200" poster="https://picsum.photos/300">
+
+        <video src="video/video.mp4" controls width="400" height="200" poster="https://picsum.photos/300">
             Il tuo browser non supporta il tag video.
         </video>
 
@@ -163,11 +182,11 @@
                 <!-- Riga 2 -->
                 <tr>
                     <td>Cella 1 - Riga 2</td>
-                    <td>Cella 2 - Riga 2</td>
+                    <td style="background-color: aqua;">Cella 2 - Riga 2</td>
                 </tr>
                 <!-- Riga 3 -->
                 <tr>
-                    <td colspan="2">Colspan 2</td>
+                    <td colspan="2" style="background-color: salmon;">Colspan 2</td>
                 </tr>
                 <!-- Riga 4 -->
                 <tr>
